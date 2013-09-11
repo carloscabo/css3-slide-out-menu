@@ -42,8 +42,8 @@ p {
 
 	position: fixed;
 	/* Mandatory! to avoid displacement on open / close */
-	/*top: 0px;
-	left: 0px;*/
+	top: 0px;
+	left: 0px;
 
 	border-bottom: 1px solid #bbb;
 	background: #eee;
