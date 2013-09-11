@@ -63,7 +63,7 @@ p {
 
 #nav {
 	width: 80%; /* Must be the same valúe we displace the  */
-	height: 100%;
+	/*height: 100%;*/
 	position: fixed;
 	z-index: 1;
 
@@ -157,7 +157,6 @@ body.slide-out-open #main-container {
 	-webkit-overflow-scrolling: touch;
 
 	background: #ddd;
-	/*z-index: -1;*/
 }
 
 /* Content */
