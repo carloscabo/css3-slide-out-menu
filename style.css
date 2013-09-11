@@ -44,9 +44,9 @@ p {
 	top: 0px; /* Mandatory! to avoid displacement on open / close */
 	left: 0px;
 
-	z-index: 999;
 	border-bottom: 1px solid #bbb;
 	background: #eee;
+	z-index: 3;
 
 	transition: transform .5s ease-in-out;
 	-moz-transition: -moz-transform .5s ease-in-out;
@@ -124,11 +124,12 @@ p {
 	-moz-transition: left .5s ease-in-out;
 	-webkit-transition: left .5s ease-in-out;*/
 
-	z-index: 5;
+	z-index: 2;
 }
 
 /* Translate main container when body has class .slide-out-open */
 
+body.slide-out-open #fixed-menu,
 body.slide-out-open #main-container {
 
 	/* X value must be same as Nav width */
