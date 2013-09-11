@@ -19,6 +19,8 @@ body {
 	font-family: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
 	color: #555;
 
+	-webkit-transform: translateZ(0);
+
 	/*overflow-x: hidden;*/
 	overflow: hidden;
 }
