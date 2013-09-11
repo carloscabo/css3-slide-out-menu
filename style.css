@@ -1,0 +1,165 @@
+/* Global styles */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	position: relative;
+	font-size: 16px;
+	font-family: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+	color: #555;
+
+	/*overflow-x: hidden;*/
+	overflow: hidden;
+}
+
+body.slide-out-open {
+	overflow-y: hidden;
+}
+
+p {
+	padding:1em;
+}
+
+/* Fixed menu in the content area */
+
+#fixed-menu {
+	width: 100%;
+	height: 64px;
+	padding: 20px;
+
+	position: fixed;
+	top: 0; /* Mandatory! to avoid displacement on open / close */
+	left: 0;
+
+	z-index: 2;
+	border-bottom: 1px solid #bbb;
+	background: #eee;
+
+	transition: transform .5s ease-in-out;
+	-moz-transition: -moz-transform .5s ease-in-out;
+	-webkit-transition: -webkit-transform .5s ease-in-out;
+
+	/* Using left, instead if transform3D */
+	/*transition: left .5s ease-in-out;
+	-moz-transition: left .5s ease-in-out;
+	-webkit-transition: left .5s ease-in-out;*/
+}
+
+/* Slide out navigation menu */
+
+#nav {
+	width: 80%; /* Must be the same valúe we displace the  */
+	height: 100%;
+	position: fixed;
+	z-index: 1;
+
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+
+	border-right: 1px solid #bbb;
+	background: #eee;
+	color: #555;
+
+	/* Think is unnecesary (?) */
+	/*transition: opacity 0s .25s;
+	-moz-transition: opacity 0s .25s;
+	-webkit-transition: opacity 0s .25s;*/
+}
+
+/* Active slide out navigation */
+
+/* Think is unnecesary (?) */
+/*body.slide-out-open #nav {
+	opacity: 1;
+	transition: opacity 0s 0s;
+	-moz-transition: opacity 0s 0s;
+	-webkit-transition: opacity 0s 0s;
+}*/
+
+/* Slide out navigation list items */
+
+#nav ul li {
+	display: block;
+	clear: both;
+	border-bottom: 1px solid #bbb;
+}
+
+#nav ul li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+}
+
+#nav ul li a:hover {
+	background: #ddd;
+}
+
+/* Main container */
+
+#main-container {
+	display: block;
+	position: relative;
+	height: 100%;
+
+	transition: transform .5s ease-in-out;
+	-moz-transition: -moz-transform .5s ease-in-out;
+	-webkit-transition: -webkit-transform .5s ease-in-out;
+
+	/* Using left, instead if transform3D */
+	/*transition: left .5s ease-in-out;
+	-moz-transition: left .5s ease-in-out;
+	-webkit-transition: left .5s ease-in-out;*/
+
+	z-index: 5;
+}
+
+/* Translate main container when body has class .slide-out-open */
+
+body.slide-out-open #main-container {
+
+	/* X value must be same as Nav width */
+	transform: translate3D(80%,0,0);
+	-moz-transform: translate3D(80%,0,0);
+	-webkit-transform: translate3D(80%,0,0);
+
+	/* Using left, instead if transform3D */
+	/*left: 80%;*/
+}
+
+/* Content container */
+
+#content-container {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+
+	position: absolute;
+	top: 64px; /* Same as #fixed menu height */
+	left: 0;
+
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+
+	background: #ddd;
+	/*z-index: -1;*/
+}
+
+/* Content */
+
+#content {
+	margin: 0 0 25px 0;
+	padding: 25px 25px 64px 25px;
+}
+
