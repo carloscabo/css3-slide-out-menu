@@ -163,3 +163,9 @@ body.slide-out-open #main-container {
 	padding: 25px 25px 64px 25px;
 }
 
+/* Open / close button */
+
+span#js-menu-open {
+	padding: 16px;
+	background: #999;
+}

@@ -59,7 +59,7 @@
 		<!-- Header -->
 		<header id="fixed-menu">
 
-      <a href="#" id="js-menu-open">Open / Close</a>
+      <span id="js-menu-open">Open / Close</span>
 
 		</header>
 
@@ -98,7 +98,7 @@
   <script>
     $( document ).ready(function() {
 
-      $('a#js-menu-open').click(function (e) {
+      $('span#js-menu-open').click(function (e) {
         e.preventDefault();
         $('body').toggleClass('slide-out-open');
       });
