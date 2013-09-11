@@ -14,7 +14,7 @@ And many other hints / tips by other people.
 Demo
 ====
 
-<http://htmlpreview.github.io/?http://github.com/carloscabo/css3-slide-out-menu/index.html>
+<http://htmlpreview.github.io/?https://github.com/carloscabo/css3-slide-out-menu/master/index.html>
 
 Features
 ========
