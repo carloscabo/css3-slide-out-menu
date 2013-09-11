@@ -41,8 +41,9 @@ p {
 	padding: 20px;
 
 	position: fixed;
-	top: 0px; /* Mandatory! to avoid displacement on open / close */
-	left: 0px;
+	/* Mandatory! to avoid displacement on open / close */
+	/*top: 0px;
+	left: 0px;*/
 
 	border-bottom: 1px solid #bbb;
 	background: #eee;
