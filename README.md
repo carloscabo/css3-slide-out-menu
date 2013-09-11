@@ -16,6 +16,9 @@ Demo
 
 <http://htmlpreview.github.io/?https://github.com/carloscabo/css3-slide-out-menu/master/index.html>
 
+Short URL  
+<http://bit.ly/19GFiZB>
+
 Features
 ========
 
